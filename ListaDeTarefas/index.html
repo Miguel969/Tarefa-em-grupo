@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div class="UiTarefa">
+            <div class="Titulo">
+                <button></button>
+                <span>Lista de Tarefas</span>
+                <div></div>
+            </div>
+            <hr>
+            <div>
+                <div class="Top">
+                    <textarea name="" id="InputTarefa" placeholder="Digite tarefa"></textarea>
+                    <button onclick="AddTarefa()">+</button>
+                </div>
+                <div class="Filtro">
+                    <button onclick="MostraTarefa(0)">Todos</button>
+                    <button onclick="MostraTarefa(1)">Em andamento</button>
+                    <button onclick="MostraTarefa(2)">Finalizados</button>
+                </div>
+                <hr>
+                <div class="ListaTarefas" id="ListaTarefas">
+
+                    
+                       
+                    
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.UiTarefa{
+    width: 350px;
+    height: 350px;
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px  whitesmoke;
+}
+.Top{
+    display: flex;
+    padding: 5px;
+}
+.Top textarea{
+    min-width: 80%;
+    max-height: 150px;
+    resize: none;
+}
+.Top button{
+    width: 15%;
+    margin-left: 10px;
+    font-size: 25px;
+}
+.Titulo{
+    display: flex;
+    justify-content: space-between;
+}
+.Titulo button{
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    border: transparent;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.Titulo button:hover{
+    background-color: rgb(253, 83, 83);
+}
+.Titulo p{
+    margin-left: auto;
+}
+.CardTarefa{
+    display: flex;
+    gap: 5px;
+}
+.ListaTarefas{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.Filtro{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+   
+}
+.Filtro button{
+     background-color: transparent;
+    border: transparent;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.Top button{
+    background-color: cornflowerblue;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.RemoverTarefa, .Prioridade{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: transparent;
+    margin-right: 5px;
+}
+.RemoverTarefa img, .Prioridade img{
+    width: 15px;
+    height: 15px;
+}
+.acao{
+     margin-left: auto;
+      margin-right: 5px;
+      display: flex;
+      gap: 5px;
+}
