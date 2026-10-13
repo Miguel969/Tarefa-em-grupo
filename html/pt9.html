@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestao Academica</title>
-    
+
 </head>
 <body>
     <header>
@@ -65,10 +65,10 @@
 
         <div class="botoes">
 
-        <button type="button">Turmas</button>
-        <button type="button">Estudantes</button>
-        <button type="button">Notas e frequência</button>
-        <button type="button">Relatórios</button>
+        <button type="button" onclick="showTurmas()">Turmas</button>
+        <button type="button" onclick="showEstudantes()">Estudantes</button>
+        <button type="button" onclick="showNotas()">Notas e frequência</button>
+        <button type="button" onclick="showRelatorios()">Relatórios</button>
         </div>
   
      <div class="h2">
@@ -92,7 +92,7 @@
             </div>
 <br>
              <div class="botao">
-<button type="submit">Cadastrar turma</button>
+<button type="submit" onclick="cadastrarTurma()">Cadastrar turma</button>
 </div>
 </form>
 
@@ -108,8 +108,8 @@
         <p></p>
 
         <div class="buttonsbored">
-            <button type="button">Editar</button>
-            <button type="button">Excluir</button>
+            <button type="button" onclick="editarTurma()">Editar</button>
+            <button type="button" onclick="excluirTurma()">Excluir</button>
        </div>        
  </div>
 
