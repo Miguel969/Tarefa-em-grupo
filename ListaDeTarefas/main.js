@@ -1,6 +1,6 @@
 const ListaTarefas = document.getElementById("ListaTarefas")
 const InputTarefa = document.getElementById("InputTarefa")
-const listaTarefaJson = /* JSON.parse(localStorage.getItem("Tarefas")) || */[{ id: 1, Texto: "Test", IsPendent: 1, IsPrioridade: 0 }]
+const listaTarefaJson = JSON.parse(localStorage.getItem("Tarefas")) || [{ id: 1, Texto: "Test", IsPendent: 1, IsPrioridade: 0 }]
 const FiltroButton = document.querySelectorAll(".Filtro button")
 let TipoAtual = 0
 function MostraTarefa(Tipo1) {
@@ -77,7 +77,7 @@ function AddTarefa() {
     if (String(InputTarefa.value).replace(" ", '') == 0) {
         return alert("Não pode esta em branco!")
     }
-    listaTarefaJson.push({ id: listaTarefaJson.length + 1, Texto: InputTarefa.value, IsPendent: 1 })
+    listaTarefaJson.push({ id: listaTarefaJson.length + 1, Texto: InputTarefa.value, IsPendent: 1, IsPrioridade:0 })
     InputTarefa.value = null
     localStorage.setItem("Tarefas", JSON.stringify(listaTarefaJson))
     MostraTarefa()
